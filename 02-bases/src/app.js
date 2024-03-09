@@ -5,9 +5,23 @@ const {getUUID,getAge} = require('./plugings');
 //require('./js-foundation/02-destructuring');
 //const { getUserById } = require('./js-foundation/03-callbacks');
 //const { getUserById } = require('./js-foundation/04-arrow');
-const {buildMakePerson} = require('./js-foundation/05-factory');
+// const {buildMakePerson} = require('./js-foundation/05-factory');
 //console.log(emailTemplate);
 
+
+
+const getPokemonById = require('./js-foundation/06-promises');
+
+
+
+getPokemonById(1, (pokemon) => {
+    console.log({pokemon});
+});
+
+
+
+
+// ! Referencia a la funcion factory y uso.
 // const id = 1;
 // getUserById( id, (error, user) => {
     
@@ -16,10 +30,11 @@ const {buildMakePerson} = require('./js-foundation/05-factory');
 //     console.log(user);
 // });
 
-const makePerson = buildMakePerson({getUUID, getAge});
 
-const obj = {name:"Alberto", birthdate: "1987-11-17" };
+// const makePerson = buildMakePerson({getUUID, getAge});
 
-const alberto = makePerson(obj);
+// const obj = {name:"Alberto", birthdate: "1987-11-17" };
 
-console.log(alberto);
+// const alberto = makePerson(obj);
+
+// console.log(alberto);
