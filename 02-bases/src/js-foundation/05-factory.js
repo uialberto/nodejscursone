@@ -1,14 +1,15 @@
 
+const {getUUID,getAge} = require('../plugings');
 
 
 
 const buildPerson = ({name,birthdate}) => {
 
     return {
-        id: new Date().getTime(),
+        id: getUUID(),
         name: name,
         birthdate: birthdate,
-        age: new Date().getFullYear() - new Date(birthdate).getFullYear(),
+        age: getAge(birthdate),
     }
 }
 
