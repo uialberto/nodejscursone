@@ -9,15 +9,21 @@ const {getUUID,getAge} = require('./plugings');
 //console.log(emailTemplate);
 
 
+const { buildLogger } = require('./plugings');
 
-const getPokemonById = require('./js-foundation/06-promises');
+// const getPokemonById = require('./js-foundation/06-promises');
+
+const logger = buildLogger('app.js');
+
+logger.log('Hola Mundo Feliz');
+logger.error('Excepcion Producida. Error. ');
+
+// getPokemonById(1)
+// .then((pokemon) => console.log({pokemon}))
+// .catch((error) => console.log('Ha ocurrido un error.'))
+// .finally(() => console.log('Finalmente'));
 
 
-
-getPokemonById(1)
-.then((pokemon) => console.log({pokemon}))
-.catch((error) => console.log('Ha ocurrido un error.'))
-.finally(() => console.log('Finalmente'));
 
 
 
