@@ -17,6 +17,8 @@ npm install winstom --TS: Archivo Type Scritps
 
 npm init -y
 
+https://gist.github.com/Klerith/47af527da090043f604b972b22dd4c01
+
 #  run
 
 npx nodemon src/app
