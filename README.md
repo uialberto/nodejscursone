@@ -19,6 +19,9 @@ npm init -y
 
 https://gist.github.com/Klerith/47af527da090043f604b972b22dd4c01
 
+# 04-multiplication
+npm init -y
+
 #  run
 
 npx nodemon src/app
