@@ -1,5 +1,6 @@
 
-export interface CreateTableUseCase{
+export interface CreateTableUseCase
+{
     execute: (options: CreateTableOptions) => string;
 }
 
@@ -9,13 +10,12 @@ export interface CreateTableOptions{
     limit?: number;
 }
 
-export class CreateTable implements CreateTableUseCase{
-    constructor(
+export class CreateTable implements CreateTableUseCase {
+    
+    constructor()
+    {
 
-        // DI: Dependency Injection
-
-    )
-    {}
+    }
 
     execute({base, limit = 10} : CreateTableOptions){
         let outputMessage = '';
