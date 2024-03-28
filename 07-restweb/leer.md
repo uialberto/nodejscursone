@@ -15,3 +15,9 @@ npx tsc --init --outDir dist/ --rootDir src
   "build": "rimraf ./dist && tsc",
   "start": "npm run build && node dist/app.js"
 ```
+
+
+4. Generar Certificados SSL
+```
+openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout server.key -out server.crt
+```
