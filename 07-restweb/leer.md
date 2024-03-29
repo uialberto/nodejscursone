@@ -1,4 +1,4 @@
-# Node con TypeScript - TS-Node-dev (preferido)
+# Node con TypeScript - TS-Node-dev (preferido) - Alberto Baigorria
 
 1. Instalar TypeScript y demás dependencias
 ```
@@ -16,8 +16,12 @@ npx tsc --init --outDir dist/ --rootDir src
   "start": "npm run build && node dist/app.js"
 ```
 
-
 4. Generar Certificados SSL
 ```
 openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout server.key -out server.crt
+```
+
+4. Variables de ENV
+```
+npm i dotenv env-var
 ```
